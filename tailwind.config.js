@@ -24,7 +24,7 @@ export default {
       },
 
       animation: {
-        'move-in-left': 'move-in-left 0.1s ease-out forwards',
+        'move-in-left': 'move-in-left 0.3s ease-out forwards',
       }, 
     },
   },
