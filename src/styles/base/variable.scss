@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$themee: (
+  mainColor: #ff7140,
+  secondary: #143166,
+  primaryColor: #3371e3,
+  btn-banner: #ffe3ac,
+  tab-btn:#eff3fe,
+  text-1: #747575,
+  text-2:#eaeded,
+  lightText: lighten(#747575, 30%),
+  border: #ebebeb,
+  light: #fff,
+  black: #000,
+  bg-1: #fff,
+  bg-2: #f5f7f7,
+  bg-3: #eaeded,
+);
+
+@mixin theme($theme) {
+  @each $key, $value in $theme {
+    --#{"#{$key}"}: #{$value};
+  }
+}
+:root {
+  @include theme($themee);
+}

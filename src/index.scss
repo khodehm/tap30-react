@@ -1,0 +1,21 @@
+@use './styles/base/variable.scss'as *;
+@use './styles/base/font.scss' as *;
+@use "./styles/components/card.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    background:var(--bg-1);
+    -webkit-font-smoothing:antialiased;
+    font-family: 'Vazir';
+    direction: rtl ;
+}
+
