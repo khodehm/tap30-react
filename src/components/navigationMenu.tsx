@@ -29,7 +29,7 @@ export const NavigationMenu = ()=>{
 
     return(
         <section className="fixed bottom-0 left-0  w-full md:flex md:justify-center md:items-center h-auto  border-t  border-[$border]" dir="rtl">
-            <div className="flex justify-around  w-full gap-4 h-full max-w-lg mx-auto">
+            <div className="flex justify-around mb-4 w-full gap-4 h-full max-w-lg mx-auto">
                 {navItems.map((e:any,i:number)=>{
                    return(
                        <button key={i} type="button" className={`inline-flex flex-col-reverse  items-center justify-center p-4 text-sm transform transition-transform duration-150 ease-in-out ${isClicked&&activeIndex===i? 'scale-110':' scale-100'}`}   
