@@ -32,7 +32,7 @@ export default function Services (){
 
     return (
         <>
-        <section className="flex flex-col gap-4 overflow-x-hidden">
+        <section className="flex flex-col gap-4 mb-8">
             <div className="flex w-full">
              <Banner/>
             </div>
@@ -45,8 +45,9 @@ export default function Services (){
                     })}  
                 </div>                
             </section>
-            <section className="w-full p-4 overflow-x-auto scroll-snap-x scroll-smooth ease-linear">
-                <div className="flex gap-4 " onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}  onTouchEnd={handleTochEnd}
+            <section className="flex flex-wrap w-full p-4 overflow-x-auto scroll-snap-x scroll-smooth ease-linear  min-h-[40vh]">
+                <div className="flex gap-4 " 
+                // onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}  onTouchEnd={handleTochEnd}
                         >
                     {CarouselAdd.map((e:any,i:number)=>{
                         return(

@@ -9,23 +9,24 @@ export default function Discounts (){
         {id:3,text:"پیک فوری"},
     ]
     return (
-        <article className=' flex flex-col gap-4'>
-            <p className='mt-4 font-vazir-rg text-xl '>تخفیف های شما</p>
+        <article className=' flex flex-col gap-4 h-full'>
+            <p className='mt-4   text-xl '>تخفیف های شما</p>
             <div className='flex gap-3  bg-[var(--bg-1)]'>
                 {btnList.map((e:any,i:number)=>{
                     return(
 
-                        <button key={i} className={`bg-[var(--light)] text-[var(--black)] border-[1px] border-solid border-[var(--border)] p-2 min-w-16 rounded-full ${tabIndex===i? 'bg-[var(--tab-btn)] border-[1px] border-solid border-[var(--black)] ':''}`}
+                        <button key={i} className={`bg-[var(--light)] text-[var(--black)] p-2 min-w-16 rounded-full ${tabIndex===i? 'bg-[var(--tab-btn)] border-[1px] border-solid border-[var(--black)] ':''}`}
                          onClick={()=>setTabIndex(i)}>{e.text}</button>
 
                     )
                 })} 
             </div>
-            <section className='bg-[var(--bg-2)]'>
+            <section className=''>
                 {discounts.length>0?
                 discounts!.map(()=>{return ""})
-                :<div className='bg-[var(--bg-3)] h-[77vh] flex justify-center items-center '>
-                    <div className='flex flex-col justify-center items-center gap-4'>
+                :
+                <div className=' flex justify-center items-center h-[75vh]  bg-[var(--bg-3)] overflow-hidden'>
+                    <div className='flex flex-col justify-center items-center p-4'>
                         <EmptyDisCount/>
                         <p className='font-vazir-black font-bold text-xl text-[var(--text-1)]'>شما در حال حاضر کد تخفیفی ندارید.</p>
                     </div>

@@ -19,8 +19,8 @@ export default function Layout() {
   }, [path]);
   return (
     <>
-      <div className="flex justify-center items-center   bg-[var(--bg-1)] md:hidden">
-        <div className="w-full md:max-w-[400px]  md:flex md:flex-col md:items-center md:justify-center">
+      <div className=" md:justify-center md:items-center  md:hidden  bg-[var(--bg-1)] ">
+        <div className="md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
           <NavigationMenu />
           <Outlet />
         </div>

@@ -5,8 +5,7 @@ export const Banner = () => {
     <>
       <section className=" relative bg-[var(--secondary)] w-full" dir="ltr">
         <div>
-          <p className="absolute right-4 top-5 text-xl font-vazir-md font-extrabold text-[var(--light)]">ارسال رایگان بسته با تپسی </p>
-
+          <p className="absolute right-4 top-5 text-xl  font-extrabold text-[var(--light)]">ارسال رایگان بسته با تپسی </p>
         </div>
         <div className="flex flex-wrap">
           <p className="absolute right-4 top-12 text-md text-balancefont-mono text-[var(--text-2)]" dir="rtl">
@@ -21,7 +20,7 @@ export const Banner = () => {
             <span className="text-xl"><GoArrowLeft /></span> 
           </button>   
         </div>
-        <div className=""><img className="animate-move-in-left h-[200px]"  src={packageImage.package} alt="" /></div>
+        <div className="h-[200px]"><img className="animate-move-in-left h-full"  src={packageImage.package} alt="" /></div>
       </section>
     </>
   );

@@ -5,7 +5,7 @@ export const IImages: any[] = [
   { src: "https://static.tapsi.cab/passenger/intercity.png", alt: "",title:"بین شهری" ,banner:false,},
   {
     src: "https://static.tapsi.cab/passenger/become-a-driver.png",
-    alt: "",title:"ثبت نام سفیر " ,banner:null,
+    alt: "",title:"ثبت نام سفیر " ,banner:true ,bannerTitle:"درآمد ویژه",
   },
   {src: "https://baker-media.tapsi.cab/passenger-static/superapp-food.png",  alt: "",title:"سفارش غذا" ,bannerTitle:"40% تخفیف", banner:true},
 
@@ -25,7 +25,7 @@ export const CarouselAdd: any[] = [
     src:
       "https://able-media.tapsi.cab/statics/QP1IRDQ62YV0INKR7K.jpg",
     alt: "",
-    color:"#ffac8a",
+    color:"#ff7140",
     btnText:"همین حالا بخور !",
     btnColor:"rgb(255, 213, 194)",
   },
@@ -45,6 +45,6 @@ export const CarouselAdd: any[] = [
     alt: "",
     color:"var(--secondary)",
     btnText:"ارسالش کن!!",
-    btnColor:"var(--primaryColor)",
+    btnColor:"#fff",
   },
 ];
