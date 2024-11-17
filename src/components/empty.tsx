@@ -3,7 +3,7 @@ export const Empty = (props:any)=>{
     const detectSvgType = ()=>{
         switch (props.svg){
             case "discount":
-            return 'src/assets/svgs/discounts.svg';
+            return '/svgs/discounts.svg';
         }
     }
     return(
