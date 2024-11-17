@@ -28,7 +28,7 @@ export const Card = ({id,title,src,hasBtn,dsc,color,className,btnText,btnBg}:ICa
                     </div>
                 }
                 {src&&
-                    <div className={`absolute bottom-2  h-[150px] flex  overflow-hidden  left-0`} style={{borderRadius:id===1? '50%':''}}>
+                    <div className={`absolute bottom-2  h-[100px]   overflow-hidden  left-0`} style={{borderRadius:id===1? '50%':''}}>
                         <img className="h-full" src={src} alt="random picture"/>
                     </div>
                 }
