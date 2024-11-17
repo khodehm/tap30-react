@@ -1,6 +1,9 @@
 @use './styles/base/variable.scss'as *;
 @use './styles/base/font.scss' as *;
 @use "./styles/components/card.scss";
+@use "./styles/components/loading.scss";
+@use "./styles/components/skeleton.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,8 +18,7 @@ body{
     outline: none;
     background:var(--bg-1);
     -webkit-font-smoothing:antialiased;
-    scrollbar-width: 0;
-    
+    scrollbar-width: 0;    
     font-family: 'Vazir';
     direction: rtl ;
 }

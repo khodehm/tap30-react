@@ -1,17 +1,17 @@
 import { BsArrowLeft } from "react-icons/bs";
-import { IoWalletOutline } from "react-icons/io5";
+import { CiWallet } from "react-icons/ci";
 import { Card } from "../components/card";
 import { MiniCard } from "../components/miniCard";
 import { CiCreditCardOff } from "react-icons/ci";
-import { BiSupport } from "react-icons/bi";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { MdOutlineStar } from "react-icons/md";
 
 export default function Profile() {
   const cardIconsArray =[
-    {title:"کیف پول " ,icon:<IoWalletOutline className="text-2xl w-full" />,isFullWidth:false},
-    {title:"پرداخت اعتباری" ,icon:<CiCreditCardOff className="text-2xl w-full"/>,isFullWidth:false},
-    {title:"پشتیبانی" ,icon:<BiSupport className="text-2xl w-full"/>,isFullWidth:false},
-    {title:"باشگاه مشتریان" ,icon:<MdOutlineStar className="text-2xl w-full"/>,isFullWidth:true, score:"156115"}
+    {title:"کیف پول " ,icon:<CiWallet className="text-[2rem] w-full" />,isFullWidth:false},
+    {title:"پرداخت اعتباری" ,icon:<CiCreditCardOff className="text-[2rem] w-full"/>,isFullWidth:false},
+    {title:"پشتیبانی" ,icon:<TfiHeadphoneAlt className="text-[2rem] w-full"/>,isFullWidth:false},
+    {title:"باشگاه مشتریان" ,icon:<MdOutlineStar className="text-[2rem] w-full"/>,isFullWidth:true, score:"156115"}
 
   ]
   
@@ -40,7 +40,7 @@ export default function Profile() {
           {cardIconsArray.map((e:any,i:number)=>{ 
             return(                
               <section  key={i} style={{display:i===3? 'none':''}}>                
-                <MiniCard  key={i} className={`flex flex-wrap `} icon={e.icon} title={e.title} bannerTitle={""}/>
+                <MiniCard  key={i} className={`flex flex-wrap `} type={"profile"} icon={e.icon} title={e.title} bannerTitle={""}/>
               </section>  
             )
           }
@@ -49,9 +49,9 @@ export default function Profile() {
         </section>
         <section className=" absolute top-[15rem] p-4 flex w-full">
           {/* <MiniCard title={cardIconsArray[3].title} className={} icon={cardIconsArray[3].icon} bannerTitle={""} /> */}
-          <div className="flex w-full gap-3 bg-[var(--text-2)] text-[var(--black)] rounded-xl p-4">
+          <div className="flex w-full gap-3 justify-between bg-[var(--text-2)] text-[var(--black)] rounded-xl p-4">
            <p className="font-sm  ">{cardIconsArray[3].title}</p>
-           <section className="flex gap-2 justify-between ">
+           <section className="flex gap-2  ">
             <p>{cardIconsArray[3].icon}</p>            
             <p className="flex gap-2">{cardIconsArray[3].score?.replace('6',',6')} <span>امتیاز</span></p>
            </section>

@@ -5,11 +5,13 @@ import Profile from "./pages/profile";
 import './index.scss';
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";// Example component
 import NoMatch from "./components/not-found";
+import { lazy, Suspense } from "react";
+import { Loading } from "./components/loading";
 export default function App() {
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <Layout />, 
+        element:(<Suspense fallback={<><Loading/>   </>}><Layout/></Suspense>),
         errorElement:<NoMatch/>,
         children: [
           {
@@ -18,8 +20,8 @@ export default function App() {
           },
           {
             path: "services", // or "home" if it's nested further
-            element: <Services />, // This should show up in the Outlet
-          },
+            element: (<Services />), // This should show up in the Outlet
+          },  
           {
             path: "discounts", // or "home" if it's nested further
             element: <Discounts />, // This should show up in the Outlet

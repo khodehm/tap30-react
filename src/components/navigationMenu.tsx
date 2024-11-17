@@ -22,21 +22,17 @@ export const NavigationMenu = ()=>{
         },150)
         route(path)
     }
-            // <button key={i} type="button" className={`inline-flex flex-col-reverse items-center justify-center p-4 text-sm transform transition-transform duration-150 ease-in-out   ${isClicked&&activeIndex===i? 'scale-100':' scale-90'}`}   
-
-                        // onClick={()=>handlenavClick(i,e.path)}
-                        // >
 
     return(
-        <section className="fixed bottom-0 left-0 z-10 w-full md:w-[400px] bg-[var(--bg-1)] md:flex justify-center md:items-center h-auto  border-t  border-[$border]" dir="rtl">
-            <div className="flex justify-around mb-4 w-full gap-4 h-full max-w-lg mx-auto">
+        <section className="fixed  bottom-0 left-0 z-50 w-full md:w-[400px] bg-[var(--bg-1)]/90 backdrop-blur-3xl md:flex justify-center md:items-center h-auto  border-t  border-[$border]" dir="rtl">
+            <div className="flex justify-around mb-2 w-full gap-4 h-full max-w-lg mx-auto">
                 {navItems.map((e:any,i:number)=>{
                    return(
                        <button key={i} type="button" className={`inline-flex flex-col-reverse  items-center justify-center p-4 text-sm transform transition-transform duration-150 ease-in-out ${isClicked&&activeIndex===i? 'scale-110':' scale-100'}`}   
                        onClick={()=>handlenavClick(i,e.path)}
                        >                           
-                            <span className={`    ${activeIndex===i? 'text-[var(--black)]':'text-[var(--text-1)]'}`}>{e.name} </span>
-                            <span className={`    ${activeIndex===i? 'text-[var(--black)]':'text-[var(--text-1)]'}`}>{react.cloneElement(e.icon,{isActive:activeIndex===i})}</span>
+                            <span className={`${activeIndex===i? 'text-[var(--black)]':'text-[var(--text-1)]'}`}>{e.name} </span>
+                            <span className={`${activeIndex===i? ' text-[var(--light)] overflow-hidden':'text-[var(--text-1)]'}`}>{react.cloneElement(e.icon,{isActive:activeIndex===i})}</span>
                                             
                         </button>
                    ) 

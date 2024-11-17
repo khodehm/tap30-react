@@ -1,16 +1,16 @@
+@use 'sass:color';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-$themee: (
+$lightTheme: (
   mainColor: #ff7140,
   secondary: #143166,
   primaryColor: #3371e3,
   btn-banner: #ffe3ac,
-  tab-btn:#eff3fe,
+  tab-btn: #eff3fe,
   text-1: #747575,
-  text-2:#eaeded,
-  lightText: lighten(#747575, 30%),
+  text-2: #eaeded,
+  lightText: color.scale(#747575,$lightness: 30%),
   border: #ebebeb,
   light: #fff,
   black: #000,
@@ -24,6 +24,7 @@ $themee: (
     --#{"#{$key}"}: #{$value};
   }
 }
+
 :root {
-  @include theme($themee);
+  @include theme($lightTheme);
 }
