@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
+import * as react from 'react';
 import pic from '../assets/svgs/void.svg';
 export default function NoMatch (){
-    
+    react.useEffect(()=>{
+        document
+        .querySelector('meta[name="theme-color"]')!
+        .setAttribute("content", "#fff");
+    },[])
     return(
         <>
         <section className="flex justify-center flex-col gap-4 items-center text-center h-[100vh]">

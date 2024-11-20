@@ -8,19 +8,21 @@ import { InstallPrompt } from "../components/install";
 
 export default function Layout() {
   const path=reactRouter.useLocation();
-  const [platform,setPlatform]=react.useState<string|null>(null);
+  const [platform,setPlatform]=react.useState<string|null>(DetectPlatform());
   react.useEffect(() => {
     if (path.pathname==="/services") {
       document
         .querySelector('meta[name="theme-color"]')!
         .setAttribute("content", "#143166");
-    } else {
+      } 
+
+      else {
       document
         .querySelector('meta[name="theme-color"]')!
         .setAttribute("content", "#fff");
     } 
   }, [path]);
-  react.useCallback(()=>{
+  react.useEffect(()=>{
     setPlatform(DetectPlatform())
   },[DetectPlatform()])
   
