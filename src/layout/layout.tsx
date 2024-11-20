@@ -30,7 +30,7 @@ export default function Layout() {
     <>
     {/* <Toaster position="bottom-left"/>
           <InstallPrompt/> */}
-      <div className=" md:justify-center md:items-center  md:hidden  bg-[var(--bg-1)] ">
+      <div className=" md:justify-center md:items-center  md:hidden bg-[var(--bg-1)] ">
         <div className="md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
           <NavigationMenu />
           <Outlet />

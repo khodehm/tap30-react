@@ -11,7 +11,7 @@ export default function App() {
     const router = createBrowserRouter([
       {
         path: "/",
-        element:(<Suspense fallback={<><Loading/>   </>}><Layout/></Suspense>),
+        element:(<Suspense fallback={<><Loading/></>}><Layout/></Suspense>),
         errorElement:<NoMatch/>,
         children: [
           {
