@@ -25,7 +25,7 @@ export default function Services (){
                 <div className="grid grid-cols-3 gap-[1rem] w-full max-w-[440px]" dir="rtl">
                   {IImages.map((e:any,i:number)=>{
                       return(
-                        <div onClick={()=>route(e.path)}>
+                        <div key={i} onClick={()=>route(e.path)}>
 
                             <MiniCard className={'flex justify-center  md:max-h-[150]'} key={i} src={e.src} topBanner={e.banner} bannerTitle={e.bannerTitle}title={e.title}/>
                         </div>
