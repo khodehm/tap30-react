@@ -18,14 +18,14 @@ export default function Profile() {
 
   return (
     <>
-      <section className="flex flex-col gap-4 relative ">
+      <section className="flex flex-col gap-4 relative w-full">
         {/* fixed header */}
         <div className="fixed top-5 flex gap-2 p-2 bg-[var(--bg-1)]">
           <div className="w-[60px] mr-2">
             <img className="w-full" src="https://app.tapsi.cab/assets/80f52284.svg" alt="profile" />
           </div>
 
-          <div className="p-2">
+          <div className="p-2 flex">
             <div className=" flex flex-col justify-center  text-[var(--black)]">
               <p className="text-xl font-bold  ">alireza hamidi</p>
               <p className="text-sm font-light  ">09159044570</p>

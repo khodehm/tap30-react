@@ -19,9 +19,9 @@ export const EmptyDisCount = () => {
           y2="598.14"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="gray" stop-opacity="0.25"></stop>
-          <stop offset="0.54" stop-color="gray" stop-opacity="0.12"></stop>
-          <stop offset="1" stop-color="gray" stop-opacity="0.1"></stop>
+          <stop offset="0" stopColor="gray" stopOpacity="0.25"></stop>
+          <stop offset="0.54" stopColor="gray" stopOpacity="0.12"></stop>
+          <stop offset="1" stopColor="gray" stopOpacity="0.1"></stop>
         </linearGradient>
       </defs>
       <title>discount</title>
@@ -194,8 +194,8 @@ export const EmptyDisCount = () => {
         transform="translate(-28.5 -118.14)"
         fill="none"
         stroke="#3f3d56"
-        stroke-miterlimit="10"
-        stroke-width="4"
+        strokeMiterlimit="10"
+        strokeWidth="4"
       ></path>
       <path
         d="M842.52,581.26a19.43,19.43,0,0,0-9.71-15.94l-4.36,8.62.13-10.44a19.69,19.69,0,0,0-6.41-.77,19.46,19.46,0,1,0,20.35,18.53Z"
@@ -242,8 +242,8 @@ export const EmptyDisCount = () => {
         transform="translate(-28.5 -118.14)"
         fill="none"
         stroke="#3f3d56"
-        stroke-miterlimit="10"
-        stroke-width="4"
+        strokeMiterlimit="10"
+        strokeWidth="4"
       ></path>
       <path
         d="M1143.52,580.26a19.43,19.43,0,0,0-9.71-15.94l-4.36,8.62.13-10.44a19.69,19.69,0,0,0-6.41-.77,19.46,19.46,0,1,0,20.35,18.53Z"
@@ -290,8 +290,8 @@ export const EmptyDisCount = () => {
         transform="translate(-28.5 -118.14)"
         fill="none"
         stroke="#3f3d56"
-        stroke-miterlimit="10"
-        stroke-width="4"
+        strokeMiterlimit="10"
+        strokeWidth="4"
       ></path>
       <path
         d="M84.48,567.26a19.43,19.43,0,0,1,9.71-15.94l4.36,8.62-.13-10.44a19.69,19.69,0,0,1,6.41-.77,19.46,19.46,0,1,1-20.35,18.53Z"

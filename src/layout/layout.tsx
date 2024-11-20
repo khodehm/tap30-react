@@ -4,7 +4,7 @@ import * as reactRouter from "react-router-dom";
 import * as react from 'react';
 import DetectPlatform from "../shared/services/platformDetector";
 import { Toaster } from "react-hot-toast";
-import { InstallPrompt } from "../components/install";
+import { Loading } from "../components/loading";
 
 export default function Layout() {
   const path=reactRouter.useLocation();
@@ -14,8 +14,7 @@ export default function Layout() {
       document
         .querySelector('meta[name="theme-color"]')!
         .setAttribute("content", "#143166");
-      } 
-
+      }
       else {
       document
         .querySelector('meta[name="theme-color"]')!
@@ -25,11 +24,8 @@ export default function Layout() {
   react.useEffect(()=>{
     setPlatform(DetectPlatform())
   },[DetectPlatform()])
-  
   return (
     <>
-    {/* <Toaster position="bottom-left"/>
-          <InstallPrompt/> */}
       <div className=" md:justify-center md:items-center  md:hidden bg-[var(--bg-1)] ">
         <div className="md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
           <NavigationMenu />

@@ -4,8 +4,8 @@ import { MiniCard } from "../components/miniCard";
 import { Card } from "../components/card";
 import * as react from 'react';
 import * as reactRouter from 'react-router-dom';
-import { Loading } from "../components/loading";
 import { Skeleton } from "../components/skeleton";
+import { InstallPrompt } from "../components/install";
 
 export default function Services (){
     const [activeIndex,setActiveIndex]=react.useState(0);
@@ -16,6 +16,7 @@ export default function Services (){
     return (
         <>
         <section className="flex flex-col gap-4 mb-8">
+             <InstallPrompt/>   
             <div className="flex w-full">
              <Banner/>
             </div>
