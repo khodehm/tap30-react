@@ -1,18 +1,63 @@
-/* HTML: <div class="loader"></div> */
-.loader {
-  position: relative;
-  top:25rem;
-  right:45%;
-  transform: translateX(50% 50%);
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: 
-    radial-gradient(farthest-side,var(--mainColor) 94%,#0000) top/8px 8px no-repeat,
-    conic-gradient(#0000 30%,var(--mainColor));
-  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
-  animation: l13 1s infinite linear;
+.container {
+  --uib-size: 10px;
+  --uib-color: var(--mainColor);
+  --uib-speed: 0.8s;
+  --uib-stroke: 3.5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: var(--uib-size);
+  width: var(--uib-size);
 }
-@keyframes l13{ 
-  100%{transform: rotate(1turn)}
+
+.line {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - var(--uib-stroke) / 2);
+  height: var(--uib-stroke);
+  width: 15%;
+  border-radius: calc(var(--uib-stroke) / 2);
+  background-color: var(--uib-color);
+  animation: rotate var(--uib-speed) ease-in-out infinite alternate;
+  transition: background-color 0.3s ease;
+}
+
+.line:nth-child(1) {
+  animation-delay: calc(var(--uib-speed) * -0.375);
+}
+
+.line:nth-child(2) {
+  animation-delay: calc(var(--uib-speed) * -0.375);
+  opacity: 0.8;
+}
+
+.line:nth-child(3) {
+  animation-delay: calc(var(--uib-speed) * -0.3);
+  opacity: 0.6;
+}
+
+.line:nth-child(4) {
+  animation-delay: calc(var(--uib-speed) * -0.225);
+  opacity: 0.4;
+}
+
+.line:nth-child(5) {
+  animation-delay: calc(var(--uib-speed) * -0.15);
+  opacity: 0.2;
+}
+
+.line:nth-child(6) {
+  animation-delay: calc(var(--uib-speed) * -0.075);
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
