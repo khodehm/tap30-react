@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# 🚕 کلون تپسی – اپلیکیشن وب موبایلی با React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این پروژه یک کلون از اپلیکیشن درخواست تاکسی **تپسی** است که با استفاده از **React** ساخته شده و برای نمایش مهارت‌های فرانت‌اند طراحی شده است.  
+رابط کاربری این اپ به‌صورت **مخصوص موبایل** پیاده‌سازی شده و تنها در دستگاه‌های موبایل یا شبیه‌ساز موبایل در مرورگر به‌درستی نمایش داده می‌شود.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+> ⚠️ **فقط مخصوص موبایل**: این اپلیکیشن فقط برای نمایش در موبایل طراحی شده است و در دسکتاپ نیاز به حالت شبیه‌ساز دارد.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ تکنولوژی‌های استفاده‌شده
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- ⚛️ React (با هوک‌ها)
+- 🌐 React Router
+- 🎨 Tailwind CSS یا SCSS (بسته به پروژه شما)
+- 🎞️ Framer Motion (برای انیمیشن‌ها – در صورت استفاده)
+- 🗺️ Leaflet.js یا نقشه ثابت (در صورت استفاده)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## ✨ امکانات پروژه
+- 📲 طراحی کامل موبایلی (عرض ۴۰۰ پیکسل)
+- 🧩 طراحی ماژولار و کامپوننت‌محور
+- 🎯 مناسب برای اضافه‌کردن به رزومه و نمونه‌کارها
+
+---
+
+## 🗂️ ساختار پوشه‌ها
+
