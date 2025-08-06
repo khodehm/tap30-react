@@ -25,7 +25,7 @@ export const MiniCard = ({className,src,title,topBanner,bannerTitle,icon,type}:I
       </div>
       :
       <div className="flex flex-wrap justify-center items-center h-full  p-1">
-      <p className="text-sm w-64 break-words">{title}</p>
+      <p className="text-md font-vazir w-64 break-words">{title}</p>
     </div>
       }
 

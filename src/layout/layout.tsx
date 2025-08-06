@@ -7,8 +7,8 @@ import { Toaster } from "react-hot-toast";
 import { Loading } from "../components/loading";
 
 export default function Layout() {
-  const path=reactRouter.useLocation();
-  const [platform,setPlatform]=react.useState<string|null>(DetectPlatform());
+  const path = reactRouter.useLocation();
+  const [platform,setPlatform] = react.useState<string|null>(DetectPlatform());
   react.useEffect(() => {
     if (path.pathname==="/services") {
       document
@@ -26,7 +26,7 @@ export default function Layout() {
   },[DetectPlatform()])
   return (
     <>
-      <div className=" md:justify-center md:items-center  md:hidden bg-[var(--bg-1)] ">
+      <div className="flex justify-center items-center bg-[var(--bg-1)] ">
         <div className="md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
           <NavigationMenu />
           <Outlet />

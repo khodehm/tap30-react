@@ -9,7 +9,7 @@ interface ICardProps{
     hasBtn:boolean
     btnText?:any;
     btnBg:any;
-    className:any
+    className?: any
 
 }
 export const Card = ({id,title,src,hasBtn,dsc,color,className,btnText,btnBg}:ICardProps)=>{
