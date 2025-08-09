@@ -3,7 +3,7 @@ import './index.scss';
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";// Example component
 import NoMatch from "./components/not-found";
 import { lazy, Suspense } from "react";
-import { Loading } from "./components/loading";
+import { Loading } from "./components/loading/loading";
 export default function App() {
   const Layout =lazy(()=>import("./layout/layout"));
   const Services = lazy(()=>import("./pages/service"));

@@ -4,7 +4,7 @@ import * as reactRouter from "react-router-dom";
 import * as react from 'react';
 import DetectPlatform from "../shared/services/platformDetector";
 import { Toaster } from "react-hot-toast";
-import { Loading } from "../components/loading";
+import { Loading } from "../components/loading/loading";
 
 export default function Layout() {
   const path = reactRouter.useLocation();
@@ -27,7 +27,7 @@ export default function Layout() {
   return (
     <>
       <div className="flex justify-center items-center bg-[var(--bg-1)] ">
-        <div className="md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
+        <div className="w-full md:max-w-[400px] sm:w-full  flex flex-col gap-4 ">
           <NavigationMenu />
           <Outlet />
         </div>
